@@ -289,6 +289,7 @@ fn parse_config_value(
                 Ok(dynamic) => Some(dynamic),
                 Err(err) => {
                     invalid_config(&format!("`dynamic` has an invalid value: {}", err), &value);
+                    return;
                 }
             };
         }
