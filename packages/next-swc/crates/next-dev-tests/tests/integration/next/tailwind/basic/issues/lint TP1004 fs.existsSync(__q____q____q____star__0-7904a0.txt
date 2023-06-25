@@ -26,15 +26,9 @@ PlainIssue {
         [
             PlainIssueProcessingPathItem {
                 context: Some(
-                    "[project]/packages/next-swc/crates/next-dev-tests/tests/temp/next/tailwind/basic/input/pages/index.jsx",
+                    "[project]/packages/next-swc/crates/next-dev-tests/tests/temp/next/tailwind/basic/input/pages",
                 ),
-                description: "Next.js page file",
-            },
-            PlainIssueProcessingPathItem {
-                context: Some(
-                    "[next]/entry/server-renderer.tsx",
-                ),
-                description: "server-side rendering /",
+                description: "Next.js pages directory not found fallback",
             },
             PlainIssueProcessingPathItem {
                 context: Some(
