@@ -165,17 +165,17 @@ Parallel Routing can be used to render modals.
   height="687"
 />
 
-The `@authModal` slot renders a`<Modal>` component that can be shown by navigating to a matching route, for example `/login`.
+The `@auth` slot renders a`<Modal>` component that can be shown by navigating to a matching route, for example `/login`.
 
 ```tsx filename="app/layout.tsx" switcher
 export default async function Layout(props: {
   // ...
-  authModal: React.ReactNode
+  auth: React.ReactNode
 }) {
   return (
     <>
       {/* ... */}
-      {props.authModal}
+      {props.auth}
     </>
   )
 }
@@ -192,7 +192,7 @@ export default async function Layout(props) {
 }
 ```
 
-```tsx filename="app/@authModal/login/page.tsx" switcher
+```tsx filename="app/@auth/login/page.tsx" switcher
 import { Modal } from 'components/modal'
 
 export default function Login() {
